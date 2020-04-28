@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Trending #-App</title>
+    <body style="background-color:burlywood">
+        <h1>Twitter Trending Hashtags</h1>
+        <div>Enter WOE_ID to know trending Hashtags:
+            <form action="/add" method="POST" >
+            <input type="number" name="tag" placeholder="E.g. India: 2282863" width="500px">
+            <button type="submit">Search</button>
+            </form>
+        </div>
+        <div>
+            <h1 style="font-size: large;">Trending Hastags for twitter are:</h1>
+                <ul>
+                   
+                    {{_trends_set}}                  
+                </ul>
+        </div> 
+        <div>
+            <h1 style="font-size: large;">Enter a Hastag to check its Frequncy of use:</h1>
+            <form action="/frequency" method="POST">
+            <input type="text" name="hashtag" placeholder="#SomethongFromAbove" width="500px">
+             <button type="submit">Submit</button>
+            </form>
+        </div>   
+        <div>
+            <h1 style="font-size: large;">Frequency of Trending Hastags</h1>
+                <ul>
+                   
+                    {{frequent}}                  
+                </ul>
+        </div>    
+    </body>
+
+</html>

@@ -3,11 +3,11 @@ from flask import Flask, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from collections import Counter
 
-
-ACCESS_TOKEN = "1254297025845137408-XcNl4aA5NKRbJyisYNzLkLLh9UhSQf"
-ACCESS_TOKEN_SECRET = "7YK2hRFDmHQIqxM8Ra53vWpvqHS2dIEW8ki6E0ccgUNth"
-CONSUMER_KEY = "Y9Rc4DVewa7XcD2kxJfq4SsBR"
-CONSUMER_SECRET = "yYjv6GaX2kKqwe9zRjKeMgCKXgIOVIvLtnPZMFLkm7oCa0eud3"
+#Please enter your credentials from twitter site
+ACCESS_TOKEN = ""
+ACCESS_TOKEN_SECRET = ""
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
 
 auth=twitter.oauth.OAuth(ACCESS_TOKEN, ACCESS_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
 

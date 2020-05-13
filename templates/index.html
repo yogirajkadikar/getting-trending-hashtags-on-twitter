@@ -27,7 +27,21 @@
             <h1 style="font-size: large;">Frequency of Trending Hastags</h1>
                 <ul>
                    
-                    {{frequent}}                  
+                    {{frequent}}
+                                 
+                </ul>
+        </div>
+        <div>
+            <h1 style="font-size: large;">Please click on button to view top ten tweets fot the above hastag.</h1>
+            <form action="/query" method="POST">
+            <input type="text" name="hashtag_n" placeholder="Add_a_hashtag" width="500px">
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <h1 style="font-size: large;">Top ten tweets</h1>
+                <ul>
+                    <li>{{twit}}</li>
                 </ul>
         </div>    
     </body>

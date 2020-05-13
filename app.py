@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from collections import Counter
 
-#Please enter your credentials from twitter developer site
+#Please enter your credentials from twitter developer site,
 ACCESS_TOKEN = ""
 ACCESS_TOKEN_SECRET = ""
 CONSUMER_KEY = ""
